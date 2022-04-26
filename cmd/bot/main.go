@@ -14,7 +14,7 @@ const SPACE = "%0A"
 func main() {
 	utils.LoadEnviroment()
 
-	for range time.Tick(time.Minute * 30) {
+	for range time.Tick(time.Hour * 4) {
 		isOk := processData()
 		if !isOk {
 			log.Println("Error getting data")
